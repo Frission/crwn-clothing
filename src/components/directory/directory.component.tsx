@@ -3,11 +3,9 @@ import MenuItem from "../menu-item/menu-item.component"
 import styles from "./directory.module.scss"
 
 const Directory = () => {
-	const [sections, setSections] = React.useState<Array<DirectorySection>>(defaultSections)
-
 	return (
 		<div className={styles.directoryMenu}>
-			{sections.map(menuItemProps => {
+			{defaultSections.map(menuItemProps => {
 				return <MenuItem
 					key={menuItemProps.id}
 					{...menuItemProps}
