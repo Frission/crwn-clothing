@@ -1,8 +1,7 @@
-import React from 'react';
-import './App.css';
-import HomePage from './components/homepage.component';
+import HomePage from './components/homepage/homepage.component';
+import "./App.scss"
 
-function App() {
+const App = () => {
 	return (
 		<div>
 			<HomePage />
